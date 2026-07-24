@@ -1,0 +1,5 @@
+{
+	"dependencies": {
+		"@salla.sa/twilight-bundles": "^0.1.54"
+	}
+}
