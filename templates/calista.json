@@ -1,0 +1,125 @@
+{
+  "id": "d4d305cc-acb2-40ef-9b55-078528696fe9",
+  "components": [
+    {
+      "name": "faq-accordion-columns",
+      "title": "الأسئلة الشائعة - أعمدة (أكورديون)",
+      "icon": "sicon-question-circle",
+      "fields": [
+        {
+          "id": "sectionTitle",
+          "type": "string",
+          "label": "عنوان القسم",
+          "default": "الأسئلة الشائعة",
+          "value": "الأسئلة الشائعة "
+        },
+        {
+          "id": "desktopImage",
+          "type": "string",
+          "format": "image",
+          "label": "صورة العمود - سطح المكتب",
+          "required": true,
+          "value": "https://cdn.salla.sa/form-builder/EMl1Ae8o35qzaG0HvVqz0IpeqcK9uyHliKksscja.jpg"
+        },
+        {
+          "id": "mobileImage",
+          "type": "string",
+          "format": "image",
+          "label": "صورة العمود - الموبايل",
+          "required": true,
+          "value": "https://cdn.salla.sa/form-builder/EMl1Ae8o35qzaG0HvVqz0IpeqcK9uyHliKksscja.jpg"
+        },
+        {
+          "id": "titleColor",
+          "type": "string",
+          "format": "color",
+          "label": "لون العنوان الرئيسي",
+          "default": "#261d1d",
+          "value": "#ff0000"
+        },
+        {
+          "id": "subtitleColor",
+          "type": "string",
+          "format": "color",
+          "label": "لون العنوان الفرعي",
+          "default": "#8e5c5c",
+          "value": "#000000"
+        },
+        {
+          "id": "borderColor",
+          "type": "string",
+          "format": "color",
+          "label": "لون الحدود",
+          "default": "#ece1d7",
+          "value": "#4f5318"
+        },
+        {
+          "id": "cardBgColor",
+          "type": "string",
+          "format": "color",
+          "label": "لون خلفية البطاقة عند الفتح",
+          "default": "#ffffff",
+          "value": "#a32929"
+        },
+        {
+          "id": "overlayColor",
+          "type": "string",
+          "format": "color",
+          "label": "لون التغطية فوق صورة العمود",
+          "default": "rgba(0,0,0,.35)",
+          "value": "#917c30"
+        },
+        {
+          "id": "answerTitleColor",
+          "type": "string",
+          "format": "color",
+          "label": "لون عنوان الإجابة",
+          "default": "#261d1d",
+          "value": "#ffadad"
+        },
+        {
+          "id": "answerTextColor",
+          "type": "string",
+          "format": "color",
+          "label": "لون نص الإجابة",
+          "default": "#5b514d",
+          "value": "#000000"
+        },
+        {
+          "id": "items",
+          "type": "collection",
+          "format": "collection",
+          "label": "الأسئلة والأجوبة",
+          "required": true,
+          "minLength": 1,
+          "maxLength": 30,
+          "fields": [
+            {
+              "id": "question",
+              "type": "string",
+              "label": "السؤال",
+              "required": true
+            },
+            {
+              "id": "answer",
+              "type": "string",
+              "format": "textarea",
+              "label": "الإجابة",
+              "required": true
+            }
+          ],
+          "value": [
+            {
+              "question": "لماذا؟",
+              "answer": "انا"
+            },
+            {
+              "question": "لماذا؟",
+              "answer": "انا"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
