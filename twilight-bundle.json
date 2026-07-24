@@ -1,125 +1,126 @@
 {
-    "name": {
-        "ar": "عناصر المحتوى",
-        "en": "content-elements"
-    },
-    "description": {
-        "ar": "",
-        "en": ""
-    },
-    "author_email": "haminfares2016@gmail.com",
-    "support_url": "",
-    "repository": "https://github.com/Hema9919/tw-content-elements",
-    "components": [
+  "name": {
+    "ar": "عناصر المحتوى",
+    "en": "content-elements"
+  },
+  "description": {
+    "ar": "",
+    "en": ""
+  },
+  "author_email": "haminfares2016@gmail.com",
+  "support_url": "",
+  "repository": "https://github.com/Hema9919/tw-content-elements",
+  "components": [
+    {
+      "name": "faq-accordion-columns",
+      "title": "الأسئلة الشائعة - أعمدة (أكورديون)",
+      "icon": "sicon-question-circle",
+      "path": "home.faq-accordion-columns",
+      "fields": [
         {
-            "name": "faq-accordion-columns",
-            "title": "الأسئلة الشائعة - أعمدة (أكورديون)",
-            "icon": "sicon-question-circle",
-            "fields": [
-                {
-                    "id": "sectionTitle",
-                    "type": "string",
-                    "label": "عنوان القسم",
-                    "default": "الأسئلة الشائعة"
-                },
-                {
-                    "id": "desktopImage",
-                    "type": "string",
-                    "format": "image",
-                    "label": "صورة العمود - سطح المكتب",
-                    "required": true
-                },
-                {
-                    "id": "mobileImage",
-                    "type": "string",
-                    "format": "image",
-                    "label": "صورة العمود - الموبايل",
-                    "required": true
-                },
-                {
-                    "id": "titleColor",
-                    "type": "string",
-                    "format": "color",
-                    "label": "لون العنوان الرئيسي",
-                    "default": "#261d1d"
-                },
-                {
-                    "id": "subtitleColor",
-                    "type": "string",
-                    "format": "color",
-                    "label": "لون العنوان الفرعي",
-                    "default": "#8e5c5c"
-                },
-                {
-                    "id": "borderColor",
-                    "type": "string",
-                    "format": "color",
-                    "label": "لون الحدود",
-                    "default": "#ece1d7"
-                },
-                {
-                    "id": "cardBgColor",
-                    "type": "string",
-                    "format": "color",
-                    "label": "لون خلفية البطاقة عند الفتح",
-                    "default": "#ffffff"
-                },
-                {
-                    "id": "overlayColor",
-                    "type": "string",
-                    "format": "color",
-                    "label": "لون التغطية فوق صورة العمود",
-                    "default": "rgba(0,0,0,.35)"
-                },
-                {
-                    "id": "answerTitleColor",
-                    "type": "string",
-                    "format": "color",
-                    "label": "لون عنوان الإجابة",
-                    "default": "#261d1d"
-                },
-                {
-                    "id": "answerTextColor",
-                    "type": "string",
-                    "format": "color",
-                    "label": "لون نص الإجابة",
-                    "default": "#5b514d"
-                },
-                {
-                    "id": "items",
-                    "type": "collection",
-                    "format": "collection",
-                    "label": "الأسئلة والأجوبة",
-                    "required": true,
-                    "minLength": 1,
-                    "maxLength": 30,
-                    "fields": [
-                        {
-                            "id": "question",
-                            "type": "string",
-                            "label": "السؤال",
-                            "required": true
-                        },
-                        {
-                            "id": "answer",
-                            "type": "string",
-                            "format": "textarea",
-                            "label": "الإجابة",
-                            "required": true
-                        }
-                    ]
-                }
-            ]
-        }
-    ],
-    "templates": [
+          "id": "sectionTitle",
+          "type": "string",
+          "label": "عنوان القسم",
+          "default": "الأسئلة الشائعة"
+        },
         {
-            "id": "d4d305cc-acb2-40ef-9b55-078528696fe9",
-            "path": "templates.calista",
-            "category_id": "665151403",
-            "primary_color": "",
-            "thumbnail": "templates-thumbs/calista.png",
-            "is_default": true
+          "id": "desktopImage",
+          "type": "string",
+          "format": "image",
+          "label": "صورة العمود - سطح المكتب",
+          "required": true
+        },
+        {
+          "id": "mobileImage",
+          "type": "string",
+          "format": "image",
+          "label": "صورة العمود - الموبايل",
+          "required": true
+        },
+        {
+          "id": "titleColor",
+          "type": "string",
+          "format": "color",
+          "label": "لون العنوان الرئيسي",
+          "default": "#261d1d"
+        },
+        {
+          "id": "subtitleColor",
+          "type": "string",
+          "format": "color",
+          "label": "لون العنوان الفرعي",
+          "default": "#8e5c5c"
+        },
+        {
+          "id": "borderColor",
+          "type": "string",
+          "format": "color",
+          "label": "لون الحدود",
+          "default": "#ece1d7"
+        },
+        {
+          "id": "cardBgColor",
+          "type": "string",
+          "format": "color",
+          "label": "لون خلفية البطاقة عند الفتح",
+          "default": "#ffffff"
+        },
+        {
+          "id": "overlayColor",
+          "type": "string",
+          "format": "color",
+          "label": "لون التغطية فوق صورة العمود",
+          "default": "rgba(0,0,0,.35)"
+        },
+        {
+          "id": "answerTitleColor",
+          "type": "string",
+          "format": "color",
+          "label": "لون عنوان الإجابة",
+          "default": "#261d1d"
+        },
+        {
+          "id": "answerTextColor",
+          "type": "string",
+          "format": "color",
+          "label": "لون نص الإجابة",
+          "default": "#5b514d"
+        },
+        {
+          "id": "items",
+          "type": "collection",
+          "format": "collection",
+          "label": "الأسئلة والأجوبة",
+          "required": true,
+          "minLength": 1,
+          "maxLength": 30,
+          "fields": [
+            {
+              "id": "question",
+              "type": "string",
+              "label": "السؤال",
+              "required": true
+            },
+            {
+              "id": "answer",
+              "type": "string",
+              "format": "textarea",
+              "label": "الإجابة",
+              "required": true
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ],
+  "templates": [
+    {
+      "id": "d4d305cc-acb2-40ef-9b55-078528696fe9",
+      "path": "templates.calista",
+      "category_id": "665151403",
+      "primary_color": "",
+      "thumbnail": "templates-thumbs/calista.png",
+      "is_default": true
+    }
+  ]
 }
